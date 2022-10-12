@@ -27,3 +27,11 @@ basic.forever(function () {
     }
     basic.pause(100)
 })
+basic.forever(function () {
+    if (input.temperature() < 15) {
+        basic.setLedColor(0x999999)
+    } else {
+        basic.turnRgbLedOff()
+    }
+    basic.pause(100)
+})
